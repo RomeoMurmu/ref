@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Reference Codes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hea">
+        <h1>Reference</h1>
+    </div>
+    <div class="cont">
+        <div class="box" onclick="toggleBox(this)">
+            <div class="header">
+                <span class="titl">ATHENA</span>
+                <span class="arrow">►</span>
+            </div>
+            <div class="content">
+                <span>Reference code: 9572821171a6</span><br>
+               <a href="https://t.me/athene_official_bot/app?startapp=9572821171a6">Open Telegram</a>
+            </div>
+        </div>
+
+        <div class="box" onclick="toggleBox(this)">
+            <div class="header">
+                <span class="titl">Spell Wallet</span>
+                <span class="arrow">►</span>
+            </div>
+            <div class="content">
+               <a href="https://t.me/spell_wallet_bot/wallet?startapp=r-spell1rhg5dkjfszy3aytnfp04hfeueqyx3am88n0ejj__utm-friendsTabRef">Open Telegram</a><br>
+            </div>
+        </div>
+
+        <div class="box" onclick="toggleBox(this)">
+            <div class="header">
+                <span class="titl">Nordom Gates</span>
+                <span class="arrow">►</span>
+            </div>
+            <div class="content">
+               <a href="https://t.me/nordom_gates_bot/open?startapp=nakTJ4">Open Telegram</a><br>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function toggleBox(box) {
+            const content = box.querySelector(".content");
+            const arrow = box.querySelector(".arrow");
+            const titl = box.querySelector(".titl");
+
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                box.style.boxShadow = "0 0 20px #fff, 0 0 10px #ff0000";
+                arrow.innerHTML = "►";
+                titl.style = "text-shadow: 0 0 20px #fff, 0 0 10px  #ff0000"
+                arrow.style = "text-shadow: 0 0 20px #fff, 0 0 10px  #ff0000"
+            } else {
+                document.querySelectorAll(".content").forEach(c => c.style.display = "none");
+                document.querySelectorAll(".box").forEach(b => b.style.boxShadow = "0 0 20px #fff, 0 0 10px #ff0000");
+                
+                content.style.display = "block";
+                box.style.boxShadow = "0 0 20px #fff, 0 0 10px aqua";
+                titl.style = "text-shadow: 0 0 20px #fff, 0 0 10px aqua"
+                arrow.style = "text-shadow: 0 0 20px #fff, 0 0 10px aqua"
+                arrow.innerHTML = "▲";
+            }
+        }
+    </script>
+</body>
+</html>
